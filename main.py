@@ -104,10 +104,14 @@ async def get_start(message: types.Message, state: FSMContext):
             await States.request_group.set()
 
         else:
-            text = strings.main_menu(user_language=user.lang)
-            markup = btn.ReplyKeyboardRemove(selective=True)
-            await state.finish()
-            await States.main_menu.set()
+            if user.verified:
+                text = "✅ Guruhga qabul qilindingiz.Va xabarlarni qabul qila olasiz."
+                markup = btn.ReplyKeyboardRemove(selective=True) 
+            else:
+                text = strings.main_menu(user_language=user.lang)
+                markup = btn.ReplyKeyboardRemove(selective=True)
+                await state.finish()
+                await States.main_menu.set()
     else:
         text = strings.select_language()
         markup = btn.select_language()
@@ -456,6 +460,7 @@ async def admin_get_message(callback: types.CallbackQuery, state: FSMContext):
         text = strings.Admin().user_added_group(user_language=user.lang)
         markup = None
         await bot.edit_message_text(chat_id=chat_id, text=text, message_id=callback.message.message_id, reply_markup=markup)
+        await bot.send_message(chat_id=_user.telegram_id, text="✅ Guruhga qabul qilindingiz.Va xabarlarni qabul qila olasiz.")
 
 @dp.callback_query_handler(IsAdmin_Inline(), lambda callback: callback.data.startswith(BACK_TO_USERS), state=[States.admin_users, States.add_user_to_group])
 async def admin_get_message(callback: types.CallbackQuery, state: FSMContext):

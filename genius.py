@@ -43,6 +43,7 @@ def excel_download(session,groups):
     ws.col(1).width = 256*30
     ws.col(2).width = 256*30
     ws.col(3).width = 256*30
+    ws.col(4).width = 256*30
     # ws.write(0, 0, "Пользователь", table_name)
     count, index = 0, 0
     for group in groups:
