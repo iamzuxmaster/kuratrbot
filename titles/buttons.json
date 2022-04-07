@@ -1,0 +1,38 @@
+{
+    "uz": {
+        "back": "Ortga", 
+        "request_phone": "Telefon raqamini jo'natish",
+        "main_menu": [
+            "Xabarlar"
+        ],
+        "Admin": {
+            "main_menu": [
+                "Guruhlar", "O'quvchilar", 
+                "Xabarlar"
+            ],
+            "groups": ["Guruh qo'shish"],
+            "detail_group": [
+                "Nomni o'zgartirish", "O'chirish"
+            ],
+            "delete_group": [
+                "O'chirishni tasdiqlash"
+            ], 
+            "users": [
+                "Tasdiqlanganlar", "Tasdiqlanmaganlar"
+            ],
+            "checked_users": [
+                "Exceldan yuklash"
+            ],
+            "send_message": "Barchaga"
+        },
+        "Errors": {}
+    },
+    "ru": {
+        "back": "", 
+        "Errors": {}
+    },
+    "en": {
+        "back": "", 
+        "Errors": {}
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "uz": {
+        "back": "", 
+        "request_name": ["Iltimos Ism Familiyangizni: <b>Ism Familiya</b> ko'rinishida yuboring."],
+        "request_phone": ["Iltimos raqamingizni kontakt ko'rinishida yuboring..."],
+        "request_group": ["Iltimos o'z guruxingizni tanlang:"],
+        "main_menu": ["Sizning ma'lumotlaringiz adminstratorlarga yuborildi.Iltimos tasdiqlanishini kuting..."],
+        "Admin": {
+            "new_user": ["{} isimli foydalanuvchi botdan {} guruhga kirish uchun ruxsat so'rayabti."],
+            "main_menu": ["Salom", "Guruxlar", "O'quvchilar", "Xabarlar"],
+            "groups": ["Hozirgi guruhlar", "Sizda guruhlar ro'yxati hozircha yo'q pastdagi <b>Guruh qo'shish</b> tugmasi orqali yangi guruh qo'shishingiz mumkin."],
+            "add_group": ["Iltimos guruh nomini kiriting"],
+            "added_group": ["Yangi guruh qo'shildi"],
+            "detail_group": ["Guruh nomi", "Qo'shilgan vaqt"],
+            "delete_group": ["{} guruhini o'chirish uchun iltimos tasdiqlang"],
+            "deleted_group": ["Guruh o'chirildi"],
+            "edit_name_group": ["Guruh uchun yangi nomni yozing"],
+            "edited_group": ["Guruh nomi o'zgartirldi"],
+            "users": ["O'zingizga kerakli bo'limni tanlang"],
+            "checked_users": ["Tasdiqlangan foydalanuvchilar", "Foydalanuvchilar hozircha yo'q"],
+            "notchecked_users": ["Tasdiqlanmagan foydalanuvchilar", "Foydalanuvchilar hozircha yo'q"],
+            "user_add_to_group": ["Guruhni tanlang"],
+            "user_added_group": ["Foydalanuvchi qo'shildi."],
+            "send_message": ["Xabar kimga jo'natilishi tanlang"],
+            "send_message_send": ["Xabaringizni yozing yoki fayl jo'nating..."],
+            "message_sended": ["Xabarlar yuborildi"]
+        },
+        "Errors": {
+            "name_error": "Iltimos Ism Familiyangizni to'liq shaklda kiriting: ushbu ma'lumotlar guruxlarga qabul qilinish uchun adminstratorlarga jo'natiladi..."
+        }
+    },
+    "ru": {
+        "back": "", 
+        "Errors": {}
+    },
+    "en": {
+        "back": "", 
+        "Errors": {}
+    }
+}
